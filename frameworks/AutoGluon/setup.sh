@@ -8,6 +8,13 @@ if [[ "$VERSION" == "latest" ]]; then
     VERSION="master"
 fi
 
+# these are regular autogluon and master to begin with when running,
+# so maybe this is why there's an issue when defining them as my branch and repo
+# on my framework in agbench
+echo "PRESETS for VERSION and REPO"
+echo "$VERSION"
+echo "$REPO"
+
 # creating local venv
 . ${HERE}/../shared/setup.sh ${HERE} true
 
