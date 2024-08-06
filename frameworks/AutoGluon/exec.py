@@ -70,8 +70,8 @@ def run(dataset, config):
     # whether to generate learning curves (EXTREMELY EXPENSIVE)
     _generate_curves = config.framework_params.get('_generate_curves', False)
     if _generate_curves:
-        long_run = 500 # change to 20000
-        short_run = 50 # change to 1000
+        long_run = 20000
+        short_run = 1000
         early_stop = long_run + 1
 
         hyperparameters = {
