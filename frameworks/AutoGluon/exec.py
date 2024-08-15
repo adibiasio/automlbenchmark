@@ -92,7 +92,7 @@ def run(dataset, config):
         experiment_metrics = {
             "binary": ["log_loss", "accuracy", "precision", "recall", "f1", "roc_auc"],
             "regression": ['root_mean_squared_error', 'mean_squared_error', 'mean_absolute_error', 'median_absolute_error', 'r2'],
-            "multiclass": ["accuracy", "precision_weighted", "recall_weighted", "f1_weighted"],
+            "multiclass": ["accuracy", "precision_weighted", "recall_weighted", "f1_weighted", "log_loss"],
         }
 
         learning_curves_params = {
